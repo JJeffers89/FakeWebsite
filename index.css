@@ -1,0 +1,366 @@
+/*FONTS font-family: 'Dancing Script', cursive;
+        font-family: 'Moon Dance', cursive; */
+
+body {
+    margin: 0%;
+    height: 100vh;
+    background-image: url(../html/images/macaron.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+/*NAVIGATION*/
+
+
+
+header {
+    background-color: grey;
+    border-bottom: 2px solid black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.header__banner {
+    float: left;
+    font-size: 30px;
+    
+    
+}
+
+.nav__container {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+nav {
+    float: right;
+}
+
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+  display: inline-block;  
+  margin-left: 70px;  
+  padding-top: 30px;  
+  position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+   content: '';
+   display: block;
+   height: 5px;
+   background-color: #000; 
+   position: absolute;
+   top: 0;
+   width: 0%; 
+   transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+
+
+/*INTRO*/
+
+.intro {
+    margin: 75px 35px 15px 35px;
+    padding: 15px;
+    border: 10px solid black;
+    display: flex;
+
+    background: #1a2980;
+    background: -webkit-linear-gradient(
+        to right,
+        #26d0ce,
+        #1a2980
+    );
+    background: linear-gradient(
+        to right,
+        #26d0ce,
+        #1a2980
+    )
+} 
+
+
+
+.intro h2 {
+    text-align: center;
+    align-self: center;
+    font-family: 'Moon Dance', cursive;
+    font-size: 2.1rem;
+    margin: 0.5em;
+    padding: 0.5em;
+    /*border-top: 1px solid black;
+    border-bottom: 1px solid black;*/
+}  
+
+.logo img{
+    border: 2px solid black;
+    margin: auto;
+    padding: 0.45em;
+    align-self: center;
+    
+ }   
+
+.company__statement {
+    text-align: center;
+    font-family: 'Moon Dance', cursive;
+    font-size: 3.5rem;
+    margin: 50px 35px;
+    padding: 15px;
+    text-shadow: 1px 1px 2px white, 0 0 1em red, 0 0 0.2em black; 
+}
+
+
+
+
+
+
+
+/*BAKERY CONTAINER*/
+
+.bakery__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto 35px;
+    background-color: grey;
+    border: 2px solid black;
+}   
+
+.bakery__info img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.bakery {
+    
+    justify-content: center;
+ 
+}
+
+.bakery__info p {
+    text-align: center;
+    
+    font-family: 'Moon Dance', cursive;
+    font-size: 2.4rem;
+    
+    width: fit-content;
+    
+}
+
+
+
+.bakery__info {
+    max-width: 250px;
+    margin: 10px;
+    padding: 2px;
+    border: 10px double black;
+    border-radius: 15%;
+    color: white;
+    
+    /*border: 10px solid red;*/
+}
+
+/*PROFILE*/
+
+.about__the__baker {
+   margin: 200px auto 100px auto;
+   font-size: 2.5rem;
+   font-family: 'Dancing Script', cursive;
+   color: white;
+   text-align: center;
+   text-decoration: underline;
+   text-decoration-color: black;
+   text-shadow: 1px 1px 2px white, 0 0 1em red, 0 0 0.2em black;
+
+}
+
+
+.about__ari {
+    display: flex;
+    margin: 50px 35px 200px 35px;
+    background-color: grey;
+    border: 2px solid black;
+    
+}
+
+#about__ari {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    align-self: center;
+    margin: auto;
+    color: white;
+}
+
+.profile__picture {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 2px;
+    align-self: center;
+}
+
+.profile__info__1 {
+    font-size: 1.8rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    
+    
+    
+}
+
+.profile__info__2 {
+    align-content: flex-end;
+    font-size: 1.8em;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    
+}
+
+.profile {
+    
+    font-family: 'Moon Dance', cursive;
+    color: white;
+}
+
+
+
+#purple {
+    background-color: purple;
+    padding: 0.2em;
+    border-radius: 10%;
+    color: white;
+    
+}
+
+/*CONTACT INFO*/
+
+
+
+.contact__info {
+    display: flex;
+    font-size: 1.125rem;
+    margin: 1.5rem;
+    border: 10px solid black;
+    border-radius: 10%;
+    padding: 1px;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+.details li {
+    
+    margin: 1px 8px;
+    padding: 1.5px;
+    float: right;
+}
+
+.contact__info li {
+    list-style-type: none;
+}
+
+.contact {
+height: fit-content;
+padding: 1px;
+margin: 16px auto;
+
+
+
+}
+
+.contact__info .left {
+    text-align: left;
+    font-size: 1.125em;
+    flex-wrap: wrap;
+}
+
+.contact__info .middle {
+    text-align: left;
+    font-size: 1.125em;
+    flex-wrap: wrap;
+}
+
+.contact__info .right {
+    text-align: left;
+    font-size: 1.125em;
+    flex-wrap: wrap;
+}
+
+/*FOOTER*/
+
+.company__copyright {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: auto;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 750px) {
+    .about__ari {
+        flex-direction: column;
+    }
+
+    .bakery__container {
+        margin: 100px auto;
+    }
+
+   
+}
+
+@media only screen and (max-width: 700px) {
+    .bakery__container {
+        justify-content: center;
+        
+    }
+}   
+
+@media only screen and (max-width: 900px) {
+    .logo img {
+        display: none;
+    }
+
+   
+
+    .header__banner {
+        display: none;
+    }
+
+    nav li {
+        font-size: 0.75em;
+    }
+}
